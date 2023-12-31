@@ -28,4 +28,9 @@ describe('SpaceAge', () => {
     const expectedAge = (earthAge - 20) / 0.24;
     expect(myAge.yearsPassed('Mercury', 20)).toBeCloseTo(expectedAge); 
   });
+
+  test('should correctly calculate years to come on Mercury until 50th Birthday', () => {
+    const expectedAge = (50 - earthAge) / 0.24;
+    expect(myAge.yearsToCome('Mercury', 50)).toBeCloseTo(expectedAge);
+  });
 });
