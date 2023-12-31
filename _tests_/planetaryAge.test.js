@@ -18,4 +18,11 @@ describe('SpaceAge', () => {
     const expectedAge = earthAge / 1.88;
     expect(myAge.onPlanet('Mars')).toBeCloseTo(expectedAge);
   });
+
+  test('should correctly calculate age on jupiter', () => {
+    const expectedAge = earthAge / 11.86;
+    expect(myAge.onPlanet('Jupiter')).toBeCloseTo(expectedAge);
+  });
+
+  
 });
