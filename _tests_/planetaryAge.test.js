@@ -29,6 +29,11 @@ describe('SpaceAge', () => {
     expect(myAge.onPlanet('Jupiter')).toBeCloseTo(expectedAge);
   });
 
+  test('should correctly calculate age on Saturn', () => {
+    const expectedAge = earthAge / 29.46;
+    expect(myAge.onPlanet('Saturn')).toBeCloseTo(expectedAge);
+  });
+
   test('should correctly calculate years passed on Mercury since 20th birthday', () => {
     const expectedAge = (earthAge - 20) / 0.24;
     expect(myAge.yearsPassed('Mercury', 20)).toBeCloseTo(expectedAge); 
