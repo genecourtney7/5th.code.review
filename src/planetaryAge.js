@@ -7,6 +7,10 @@ export default class SpaceAge {
       'Venus': 0.62,
       'Mars': 1.88,
       'Jupiter': 11.86,
+      'Saturn': 29.46,
+      'Uranus': 84.01,
+      'Neptune': 164.8,
+      'Pluto': 248.00
     };
   }
 
